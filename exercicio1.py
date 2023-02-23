@@ -3,9 +3,10 @@
 
 
 
+import string
 
 # Crie a função que será avaliada no exercício aqui
-import string
+
 
 def conta_palavras_unicas(text):
     text = text.translate(str.maketrans("", "", string.punctuation))
