@@ -8,11 +8,13 @@ import string
 # Crie a função que será avaliada no exercício aqui
 
 
-def conta_palavras_unicas(text):
-    text = text.translate(str.maketrans("", "", string.punctuation))
-    words = text.split()
-    words = [word for word in words if not word.isdigit()]
-    return len(words)
+def conta_palavras_unicas(list):
+    list1 = list.split()
+    unicos = []
+    for a in list1:
+        if a not in unicos:
+            unicos.append(a)
+    return len(unicos)        
 
 
 
